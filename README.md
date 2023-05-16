@@ -19,7 +19,7 @@ Generally not recommended. Will take 4+ hours to build from a single core pi zer
 
 To get started:
 1. Install the latest version of Rasbian OS
-2. Download this code: `git clone https://github.com/ht0324/TfLite_on_pizero.git`
+2. Clone this repository: `git clone https://github.com/ht0324/TfLite_on_pizero.git`
 3. `cd armv6l_whl`
 4. `pip3 install tflite_runtime-2.3.1-cp37-cp37m-linux_armv6l.whl`
 5. `cd /home/pi/tf_lite_on_pi_zero`
