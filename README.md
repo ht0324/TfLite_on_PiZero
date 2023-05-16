@@ -20,9 +20,10 @@ Generally not recommended. Will take 4+ hours to build from a single core pi zer
 To get started:
 1. Install the latest version of Rasbian OS
 2. Clone this repository: `git clone https://github.com/ht0324/TfLite_on_pizero.git`
-3. `cd armv6l_whl`
-4. `pip3 install tflite_runtime-2.3.1-cp37-cp37m-linux_armv6l.whl`
-5. `cd /home/pi/tf_lite_on_pi_zero`
-6. python3 test_1_img.py img/1.jpg
+3. change the directory to where the wheel is located: `cd armv6l_whl`
+4. run `pip3 install tflite_runtime-2.3.1-cp37-cp37m-linux_armv6l.whl`
+5. NOTE: this is the wheel compatible with Python 3.7.3. If the Python version is different, you have to use [pyenv](https://github.com/pyenv/pyenv#getting-pyenv) to manage different versions of Python.
+6. `cd /home/pi/tf_lite_on_pi_zero`
+7. `python3 test_1_img.py img/1.jpg`
 
 Pretrained MobileNetv1 and other models are available on [TensorFlow GitHub repo](https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md). Quantisized MobileNetv1 and the pruned one used in this repo are all from TensorFlow.
