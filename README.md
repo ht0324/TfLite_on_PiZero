@@ -4,7 +4,7 @@ A guide for building a wheel for Tflite that is compatible with armv6 architectu
 
 ## Getting a wheel for TFlite
 ### Option 1: Getting a prebuilt wheel
-Github source for [python 3.7](https://github.com/prettyflyforabeeguy/tf_lite_on_pi_zero) 
+Github source for python 3.7: [tflite_2.3.1](https://github.com/prettyflyforabeeguy/tf_lite_on_pi_zero), [tflite 2.5.0](https://github.com/plsdlr/tensorflowliteonpizero)
 
 Interesting deviation: [Tflite for microcontrollers](https://github.com/driedler/tflite_micro_runtime). The author claims that it provides 8x improvement than tflite, but after installing and trying to load the model, it gave a segmentation fault.
 
@@ -22,7 +22,7 @@ To get started:
 2. Clone this repository: `git clone https://github.com/ht0324/TfLite_on_pizero.git`
 3. change the directory to where the wheel is located: `cd armv6l_whl`
 4. run `pip3 install tflite_runtime-2.3.1-cp37-cp37m-linux_armv6l.whl`
-5. NOTE: this is the wheel compatible with Python 3.7.3. If the Python version is different, you have to use [pyenv](https://github.com/pyenv/pyenv#getting-pyenv) to manage different versions of Python.
+5. NOTE: this is the wheel compatible with Python 3.7.3. If the Python version is different, you have to use [pyenv](https://github.com/pyenv/pyenv#getting-pyenv) to manage different versions of Python. Use `pyenv exec pip3 install` to install the packages to respective version.
 6. `cd /home/pi/tf_lite_on_pi_zero`
 7. `python3 test_1_img.py img/1.jpg`
 
