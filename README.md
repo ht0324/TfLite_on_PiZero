@@ -13,7 +13,7 @@ Github source for python 3.7: tflite [2.3.1](https://github.com/prettyflyforabee
 4. Run `pip3 install tflite_runtime-2.3.1-cp37-cp37m-linux_armv6l.whl` or `pip3 install tflite_runtime-2.5.0-cp37-cp37m-linux_armv6l.whl`
 5. NOTE: this is the wheel compatible with Python 3.7.3. If the Python version is different, you have to use [pyenv](https://github.com/pyenv/pyenv#getting-pyenv) to manage different versions of Python. Use `pyenv exec pip3 install` to install the packages to respective version.
 6. `cd /home/pi/tf_lite_on_pi_zero`
-7. Running a sample code that tests 1 image classification from a quantized mobilenet`python3 test_1_img.py img/1.jpg`
+7. Running a sample code that tests 1 image classification from a quantized mobilenet:`python3 test_1_img.py img/1.jpg`
 
 Interesting deviation: [Tflite for microcontrollers](https://github.com/driedler/tflite_micro_runtime). The author claims that it provides 8x improvement than tflite, but after installing and trying to load the model, it gave a segmentation fault.
 
@@ -28,8 +28,8 @@ Interesting deviation: [Tflite for microcontrollers](https://github.com/driedler
 4. Install cmake and curl: `sudo apt-get install cmake curl`
 5. Clone TensorFlow repository: `git clone https://github.com/tensorflow/tensorflow.git`
 6. Inside the repository, run `./tensorflow/lite/tools/make/download_dependencies.shx`
-7. Run `nano tensorflow/lite/tools/make/targets/rpi_makefile.inc`. Change `TARGET:=armv7l` with `TAGRET:=armv6`
-8. Run the C++ installation `./tensorflow/lite/tools/make/build_rpi_lib.sh`
+7. Run: `nano tensorflow/lite/tools/make/targets/rpi_makefile.inc`. Change `TARGET:=armv7l` with `TAGRET:=armv6`
+8. Run the C++ installation: `./tensorflow/lite/tools/make/build_rpi_lib.sh`
 
 
 ## Steps for this repository
