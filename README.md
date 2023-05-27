@@ -38,8 +38,8 @@ Interesting deviation: [Tflite for microcontrollers](https://github.com/driedler
 14. Change version to v22.10.26: `git checkout v22.10.26`
 15. `mkdir build`
 16. `cd build`
-17. Build(another 4+ hours): `cmake ..`
-18. `make -j4`
+17. `cmake ..`
+18. Build(another 4+ hours): `make -j4`
 19. `sudo make install`
 20. `sudo ldconfig``clean up``cd ~``rm tensorflow.zip`
 
