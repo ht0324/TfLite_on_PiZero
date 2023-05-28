@@ -1,4 +1,4 @@
-# TfLite_on_pizero
+# TfLite_on_PiZero
  
 A guide for building a wheel for Tflite that is compatible with armv6 architecture on raspberry pi zero.
 
