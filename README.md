@@ -54,5 +54,5 @@ Interesting deviation: [Tflite for microcontrollers](https://github.com/driedler
 
 Pretrained MobileNetv1 and other models are available on [TensorFlow GitHub repo](https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md). Quantisized MobileNetv1 and the pruned one used in this repo are all from TensorFlow.
 
-Author: huntae324@gmail.com
+Author: ht0324
 Contributor: allenn_farcas@yahoo.com
